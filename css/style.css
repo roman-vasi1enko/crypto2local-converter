@@ -24,8 +24,6 @@
 /*******************************************/
 
 body{
-     /* background: -webkit-linear-gradient(left, #25c481, #25b7c4);
-     background: linear-gradient(to right, #25c481, #25b7c4); */
      background: linear-gradient(90deg, #63353a, #7714b1, #48fa94);
      background-size: 300% 300%;
      animation: gradient 4s alternate infinite;
@@ -44,14 +42,14 @@ body{
 }
 
 
-   @keyframes gradient {
+@keyframes gradient {
      0% {
-       background-position: 0%;
+          background-position: 0%;
      }
      100% {
-       background-position: 100%;
+          background-position: 100%;
      }
-   }
+}
 
 
 
@@ -111,15 +109,16 @@ nav img {
      margin-top: 0px;
      border: 1px solid rgba(255,255,255,0.3);
 }
-   th{
+
+th{
      padding: 15px 0 15px 5%;
      text-align: left;
      font-weight: 500;
      font-size: 12px;
      color: #fff;
      text-transform: uppercase;
-   }
-   td{
+}
+td{
      padding: 15px 0 15px 5%;
      text-align: left;
      vertical-align:middle;
@@ -127,11 +126,11 @@ nav img {
      font-size: 14px;
      color: #fff;
      border-bottom: solid 1px rgba(255, 255, 255, 0.058);
-   }
-   .tbl-content tr:hover {
-        background-color: rgba(255, 255, 255, 0.2);
-   }
-   input, select {
+}
+.tbl-content tr:hover {
+     background-color: rgba(255, 255, 255, 0.2);
+}
+input, select {
      border: none;
      border-bottom: 1px solid rgb(255, 255, 255);
      text-align: left;
@@ -145,7 +144,6 @@ input {
 select:focus, input:focus {
      outline: none;
 }
-   
 .btn {
      align-items: center;
      width: 110px;
@@ -172,7 +170,6 @@ select:focus, input:focus {
      margin-left: 5%;
 }
 .submit:hover {
-     /* box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset; */
      transform: translateY(-1px);
    }
    
@@ -180,36 +177,6 @@ select:focus, input:focus {
      box-shadow: #3c4fe0 0 3px 7px inset;
      transform: translateY(1px);
    }
-   
-   
-   
-   /* follow me template */
-   /* .made-with-love {
-     margin-top: 40px;
-     padding: 10px;
-     clear: left;
-     text-align: center;
-     font-size: 10px;
-     font-family: arial;
-     color: #fff;
-   }
-   .made-with-love i {
-     font-style: normal;
-     color: #F50057;
-     font-size: 14px;
-     position: relative;
-     top: 2px;
-   }
-   .made-with-love a {
-     color: #fff;
-     text-decoration: none;
-   }
-   .made-with-love a:hover {
-     text-decoration: underline;
-   } */
-   
-   
-   /* for custom scrollbar for webkit browser*/
    
    ::-webkit-scrollbar {
        width: 6px;
@@ -220,3 +187,14 @@ select:focus, input:focus {
    ::-webkit-scrollbar-thumb {
        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
    }
+
+@media screen and (max-height: 780px) {
+     body {
+          height: 100%;
+     }
+}
+@media screen and (max-width: 470px) {
+     .tbl-header, .tbl-content {
+          width: 90%;
+     }
+}

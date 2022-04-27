@@ -3,7 +3,6 @@ document.querySelector('button').addEventListener('click', getFetch)
 let rawPrices;
 let coinAmount;
 
-
 let cadBtc = document.getElementById('cadBtc');
 let usdBtc = document.getElementById('usdBtc');
 let rubBtc = document.getElementById('rubBtc');
@@ -39,7 +38,6 @@ function getFetch(){
         tryBtc.innerText = rawPrices.try.toLocaleString();
         jpyBtc.innerText = rawPrices.jpy.toLocaleString();
         brlBtc.innerText = rawPrices.brl.toLocaleString();
-
 
         })
         .catch(err => {
