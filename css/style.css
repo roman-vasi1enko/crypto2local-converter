@@ -197,4 +197,8 @@ select:focus, input:focus {
      .tbl-header, .tbl-content {
           width: 90%;
      }
+     input {
+          text-indent: 0;
+          width: 20%;
+     }
 }
