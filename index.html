@@ -6,95 +6,109 @@
     	<meta name="keywords" content="one, two, three">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<title>Bitcoin Price</title>
+		<title>Cypto Price In National Currencies</title>
 
 		<!-- external CSS link -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
 
-		<h1>Find out what is the price of Top 10 cryptos in 10 national currencies.</h1>
-		<input type="number" value="1">
-		<select name="coin">
-			<option value="bitcoin" selected>Bitcoin</option>
-			<option value="ethereum">Ethereum</option>
-			<option value="btc">Bitcoin</option>
-			<option value="btc">Bitcoin</option>
-			<option value="btc">Bitcoin</option>
-			<option value="btc">Bitcoin</option>
-			<option value="btc">Bitcoin</option>
-			<option value="btc">Bitcoin</option>
-			<option value="btc">Bitcoin</option>
-			<option value="btc">Bitcoin</option>
-		</select>
-		<button>Submit</button>
+		<!-- <header>
+			<nav>
+				<img src="images/btc.png" alt="logo">
+			</nav>
+		</header> -->
+		<main>
+			<h1>Crypto Prices In 10 National Currencies</h1>
+			<section>
+				<input type="number" value="1">
+				<select name="coin">
+					<option value="bitcoin" selected>Bitcoin</option>
+					<option value="ethereum">Ethereum</option>
+					<option value="binancecoin">BNB</option>
+					<option value="solana">Solana</option>
+					<option value="terra-luna">Terra-Luna</option>
+					<option value="cardano">Cardano</option>
+					<option value="avalanche-2">Avalanche</option>
+					<option value="polkadot">Polkadot</option>
+					<option value="dogecoin">Dogecoin</option>
+					<option value="shiba-inu">Shiba Inu</option>
+				</select>
+				<button class="btn submit">Show Prices</button>
+			</section>
 
-		<table>
-			<caption>Here is the price in 10 other national currencies</caption>
-			<thead>
-				<th>
-					<tr>
-						<td>Country</td>
-						<td>Value</td>
-						<td>Currency</td>
-					</tr>
-				</th>
-			</thead>
-			<tbody>
-				<tr>
-					<td>United States</td>
-					<td id="usdBtc"></td>
-					<td>USD</td>
-				</tr>
-				<tr>
-					<td>Canada</td>
-					<td id="cadBtc"></td>
-					<td>CAD</td>
-				</tr>
-				<tr>
-					<td>Russia</td>
-					<td id="rubBtc"></td>
-					<td>RUB</td>
-				</tr>
-				<tr>
-					<td>China</td>
-					<td id="cnyBtc"></td>
-					<td>CNY</td>
-				</tr>
-				<tr>
-					<td>India</td>
-					<td id="inrBtc"></td>
-					<td>INR</td>
-				</tr>
-				<tr>
-					<td>United Kingdom</td>
-					<td id="gbpBtc"></td>
-					<td>GBP</td>
-				</tr>
-				<tr>
-					<td>Germany</td>
-					<td id="eurBtc"></td>
-					<td>EUR</td>
-				</tr>
-				<tr>
-					<td>Turkey</td>
-					<td id="tryBtc"></td>
-					<td>TRY</td>
-				</tr>
-				<tr>
-					<td>Japan</td>
-					<td id="jpyBtc"></td>
-					<td>JPY</td>
-				</tr>
-				<tr>
-					<td>Brazil</td>
-					<td id="brlBtc"></td>
-					<td>BRL</td>
-				</tr>
-			</tbody>
-		</table>
-
+			<div class="tbl-header">
+				<table cellpadding="0" cellspacing="0" border="0">
+					<thead>
+						<tr>
+							<td>Country</td>
+							<td>Value</td>
+							<td>Currency</td>
+						</tr>
+					</thead>
+				</table>
+			</div>
+			<div class="tbl-content">
+				<table cellpadding="0" cellspacing="0" border="0">
+					<tbody>
+						<tr>
+							<td>United States</td>
+							<td id="usdBtc"></td>
+							<td>USD</td>
+						</tr>
+						<tr>
+							<td>Canada</td>
+							<td id="cadBtc"></td>
+							<td>CAD</td>
+						</tr>
+						<tr>
+							<td>Russia</td>
+							<td id="rubBtc"></td>
+							<td>RUB</td>
+						</tr>
+						<tr>
+							<td>China</td>
+							<td id="cnyBtc"></td>
+							<td>CNY</td>
+						</tr>
+						<tr>
+							<td>India</td>
+							<td id="inrBtc"></td>
+							<td>INR</td>
+						</tr>
+						<tr>
+							<td>United Kingdom</td>
+							<td id="gbpBtc"></td>
+							<td>GBP</td>
+						</tr>
+						<tr>
+							<td>Germany</td>
+							<td id="eurBtc"></td>
+							<td>EUR</td>
+						</tr>
+						<tr>
+							<td>Turkey</td>
+							<td id="tryBtc"></td>
+							<td>TRY</td>
+						</tr>
+						<tr>
+							<td>Japan</td>
+							<td id="jpyBtc"></td>
+							<td>JPY</td>
+						</tr>
+						<tr>
+							<td>Brazil</td>
+							<td id="brlBtc"></td>
+							<td>BRL</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</main>
 		<script type="text/javascript" src="js/main.js"></script>
 	</body>
 </html>
